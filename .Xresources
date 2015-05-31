@@ -1,0 +1,59 @@
+! Scrollbar or nobar lol
+URxvt.scrollBar: false
+
+! Adds padding around terminal text
+URxvt.internalBorder: 4
+
+! Font
+URxvt*.font	 xft:gohufont:size=11
+URxvt*.boldfont  xft:gohufont:bold:size=11 
+
+! Colors Dark then Light
+URxvt*background:#22283d
+URxvt*foreground:#ffffff
+
+! Other colors
+! blacks
+URxvt*color0:#111111
+URxvt*color8:#2c2c2c
+
+! reds
+URxvt*color1:#982727
+URxvt*color9:#cb9898
+
+! greens
+URxvt*color2:#518a2a
+URxvt*color10:#b2cc97
+
+! yellows
+URxvt*color3:#9f9929
+URxvt*color11:#cccb76
+
+! blues
+URxvt*color4:#354db8
+URxvt*color12:#9096e2
+
+! magentas
+URxvt*color5:#9144ae
+URxvt*color13:#e49dff
+
+! cyans
+URxvt*color6:#3b8e93
+URxvt*color14:#a0d7da
+
+! whites
+URxvt*color7:#c2c2c2
+URxvt*color15:#ffffff
+
+
+! Transparency
+URxvt*.transparent: false
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 25
+
+! Clickable Links
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/chromium
+URxvt.matcher.button: 1
+
+
