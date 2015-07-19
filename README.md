@@ -7,5 +7,4 @@ Music click toggle play pause. Might add mute or clear playlist on right or midd
 Volume is standard I3 Blocks volume script. 
 
 
-
 Besides from that it is pretty much the same from my first riceroni. 
