@@ -177,9 +177,9 @@ visualizer_look="∙|"
 ## Note: colors can be nested.
 ##
 #
-song_list_format={%a- }{%t}|{$8%f$9}$R{$3(%l)$9}
+song_list_format={$2%a $8> }{$2%t} {$R$2%b $8<} {$2%l}
 #
-song_status_format = {{%a{ "%b" }} - {%t}}
+song_status_format = {$2 %a $8> %t}
 #
 #song_library_format = {%n - }{%t}|{%f}
 #
@@ -214,9 +214,9 @@ song_status_format = {{%a{ "%b" }} - {%t}}
 ## with reversed colors.
 ##
 #
-#alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
+alternative_header_first_line_format = {$2%t}
 #
-#alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
+alternative_header_second_line_format = {$8%a >> $2%b} 
 #
 ##
 ## Note: below variables also support text attributes listed above.
@@ -274,7 +274,7 @@ song_status_format = {{%a{ "%b" }} - {%t}}
 ##   not available.
 ##
 #
-song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[blue]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
+#song_columns_list_format = (20)[blue]{a}(50)[blue]{t|f:Title} (20)[blue]{b}(7)[blue]{l}
 #
 ##### various settings #####
 #
@@ -296,7 +296,7 @@ song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[blue]{t|f:Title} (20)[
 ##
 ## Note: Possible display modes: classic, columns.
 ##
-#playlist_display_mode = columns
+playlist_display_mode = classic
 #
 #browser_display_mode = classic
 #
@@ -312,7 +312,7 @@ song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[blue]{t|f:Title} (20)[
 #
 #volume_change_step = 2
 #
-#autocenter_mode = no
+autocenter_mode = yes
 #
 #centered_cursor = no
 #
@@ -320,9 +320,9 @@ song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[blue]{t|f:Title} (20)[
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 
-progressbar_look="□▦"
+progressbar_look="□▤ "
 #
-#progressbar_boldness = yes
+#progressbar_boldness = no
 #
 ## Available values: database, playlist.
 ##
@@ -348,11 +348,11 @@ progressbar_look="□▦"
 #
 #default_tag_editor_pattern = %n - %t
 #
-#header_visibility = yes
+header_visibility = yes
 #
-#statusbar_visibility = yes
+statusbar_visibility = yes
 #
-#titles_visibility = yes
+titles_visibility = no
 #
 #header_text_scrolling = yes
 #
@@ -477,35 +477,35 @@ colors_enabled="yes"
 #
 #empty_tag_color = cyan
 #
-#header_window_color = default
+header_window_color="white"
 #
 #volume_color = default
 #
-#state_line_color = default
+state_line_color="red"
 #
 #state_flags_color = default
 #
-main_window_color="magenta" 
+main_window_color="red" 
 #
-#color1 = white
+color1="red"
 #
 color2="red"
 #
-main_window_highlight_color="magenta"
+main_window_highlight_color="red"
 #
 progressbar_color="red"
 #
-progressbar_elapsed_color="magenta"
+progressbar_elapsed_color="red"
 #
-statusbar_color="blue"
+statusbar_color="red"
 #
 alternative_ui_separator_color="white"
 #
 active_column_color="white"
 #
-visualizer_color="magenta"
+visualizer_color="red"
 #
-#window_border_color = green
+window_border_color="green"
 #
-#active_window_border = red
+active_window_border="red"
 #

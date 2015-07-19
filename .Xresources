@@ -5,45 +5,45 @@ URxvt.scrollBar: false
 URxvt.internalBorder: 4
 
 ! Font
-URxvt*.font	 xft:gohufont:size=11
-URxvt*.boldfont  xft:gohufont:bold:size=11 
+URxvt*.font: -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-1
+URxvt*.boldfont: -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso8859-1 
 
-! Colors Dark then Light
-URxvt*background:#22283d
-URxvt*foreground:#ffffff
+! Colors Dark then Light or Left then Right if Termsexy
+URxvt*background:#1d1d21
+URxvt*foreground:#a52a2a
 
 ! Other colors
 ! blacks
-URxvt*color0:#111111
-URxvt*color8:#2c2c2c
+URxvt*color0:1d1d21
+URxvt*color8:1d1d21
 
 ! reds
-URxvt*color1:#982727
-URxvt*color9:#cb9898
+URxvt*color1:#a52a2a
+URxvt*color9:#a52a2a
 
 ! greens
-URxvt*color2:#518a2a
-URxvt*color10:#b2cc97
+URxvt*color2:#339438
+URxvt*color10:#339438
 
 ! yellows
-URxvt*color3:#9f9929
-URxvt*color11:#cccb76
+URxvt*color3:#c36423
+URxvt*color11:#c36423
 
 ! blues
-URxvt*color4:#354db8
-URxvt*color12:#9096e2
+URxvt*color4:#195cc8
+URxvt*color12:#195cc8
 
 ! magentas
-URxvt*color5:#9144ae
-URxvt*color13:#e49dff
+URxvt*color5:#792695
+URxvt*color13:#792695
 
 ! cyans
-URxvt*color6:#3b8e93
-URxvt*color14:#a0d7da
+URxvt*color6:#18a7b6
+URxvt*color14:#18a7b6
 
 ! whites
-URxvt*color7:#c2c2c2
-URxvt*color15:#ffffff
+URxvt*color7:#bebebe
+URxvt*color15:#bebebe
 
 
 ! Transparency
