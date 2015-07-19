@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cur=`mpc current`
+test -n "$cur" && echo "$cur" || echo "Stopped"
+
+case $BLOCK_BUTTON in 
+	1) mpc toggle 
+esac	
+
