@@ -41,7 +41,7 @@ bindsym Mod1+Return exec urxvt
 bindsym Mod1+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym Mod1+d exec dmenu_run -h 20 -w 500 -x 420 -y 23 -fn Terminus -nb "#1d1d21" -nf "#ffffff" -sb "#1d1d21" -sf "#a52a2a"
+bindsym Mod1+d exec dmenu_run -h 20 -w 500 -x 420 -y 23 -fn Terminus -nb "#2c2f3d" -nf "#e9ca92" -sb "#2c2f3d" -sf "#c76622"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -162,24 +162,24 @@ mode "resize" {
 bindsym Mod1+r mode "resize"
 
 #Volume Keys
-bindsym Mod1+F5 exec amixer -q set Master 1dB+ unmute
-bindsym Mod1+F6 exec amixer -q set Master 1dB- unmute
-bindsym Mod1+F7 exec amixer -q set Master toggle
+#bindsym Mod1+F5 exec amixer -q set Master 1dB+ unmute
+#bindsym Mod1+F6 exec amixer -q set Master 1dB- unmute
+#bindsym Mod1+F7 exec amixer -q set Master toggle
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
     colors {
 	# Whole color settings
-	background #1d1d21
-	statusline #a52a2a
-	separator  #a52a2a
+	background #2c2f3d
+	statusline #e9ca92
+	separator  #c76622
 
 				#border #bg     #text 
-	focused_workspace 	#1d1d21	#1d1d21 #a52a2a
-	active_workspace  	#1d1d21	#1d1d21 #a52a2a 
-	inactive_workspace	#1d1d21	#1d1d21 #ffffff 
-	urgent_workspace	#1d1d21	#1d1d21 #195cc8
+	focused_workspace 	#2c2f3d	#2c2f3d #c76622
+	active_workspace  	#2c2f3d	#2c2f3d #e9ca92
+	inactive_workspace	#2c2f3d	#2c2f3d #e9ca92  
+	urgent_workspace	#2c2f3d #2c2f3d #c93939
 
     }
 #       status_command i3status
@@ -206,15 +206,20 @@ for_window [class="(?i)URxvt"] border pixel 0
 
 ##### Border Style #####
 # Border Size
-#new_window pixel 3
-#new_float pixel 3
+new_window pixel 3
+new_float pixel 3
+
+# Border Colors Set
+#set $FOCUS	#c76622
+#set $UNFOCUS	#e9ca92 
+
 
 # Border Colors
-# class			border  backgr. text	indicator
-#client.focused		#ffffff #0087ff #d700ff #005fff
-#client.focused_inactive #ffffff #8787ff #d700ff #875fff
-#client.unfocused	#ffffff #949494 #ffffff #9e9e9e
-#client.urgent		#ffffff #d7005f #ffffff #d75d5d
+# class			border   backgr.  text	 indicator
+#client.focused		$FOCUS   $FOCUS   $FOCUS $FOCUS
+#client.focused_inactive $UNFOCUS $UNFOCUS $UNFOCUS $UNFOCUS
+#client.unfocused	$UNFOCUS $UNFOCUS $UNFOCUS $UNFOCUS
+#client.urgent		$FOCUS	 $FOCUS	  $FOCUS   $FOCUS
 
 # Gaps
 gaps inner 30 
@@ -223,4 +228,5 @@ gaps outer 5
 # Startup programs
 exec --no-startup-id  compton
 #exec ~/panel_bar
-exec --no-startup-id feh --bg-scale ~/Pictures/WarGuns.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/Forrest2.jpg
+
